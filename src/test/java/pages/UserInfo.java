@@ -38,19 +38,19 @@ public class UserInfo {
     }
 
     public CharSequence getCardName() {
-        return "";
+        return "Demo Automation";
     }
 
     public CharSequence getCardNumber() {
-        return "";
+        return "5200828282828210";
     }
 
     public CharSequence getCardExpiration() {
-        return "";
+        return "12/34";
     }
 
     public CharSequence getCardCVV() {
-        return "";
+        return "191";
     }
 
 
