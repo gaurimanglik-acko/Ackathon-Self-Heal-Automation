@@ -1,8 +1,8 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import pages.PageClass;
@@ -12,12 +12,9 @@ public class Test1 {
     public WebDriver driver;
     @BeforeAll
     public static void classInit() {
-        WebDriverManager.firefoxdriver().setup();
+        WebDriverManager.chromedriver().create();
     }
-    @BeforeEach
-    public void testInit() {
-        driver = new ChromeDriver();
-    }
+
     @AfterEach
     public void testCleanup() {
         driver.quit();
