@@ -76,7 +76,7 @@ public class UserInfo {
         this.firstName = lastName;
     }
 
-    public void setUserName(String userName) {
+    public void setUsername(String userName) {
         this.username = userName;
     }
 
@@ -100,7 +100,7 @@ public class UserInfo {
         this.state = state;
     }
 
-    public void setZipCode(String zipCode) {
+    public void setZip(String zipCode) {
         this.zipCode = zipCode;
     }
 
