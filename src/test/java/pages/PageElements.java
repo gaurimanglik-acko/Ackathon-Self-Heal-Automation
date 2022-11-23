@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class PageElements {
         private final WebDriver driver;
@@ -27,12 +28,12 @@ public class PageElements {
         public WebElement address2() {
             return driver.findElement(By.id("address2"));
         }
-//        public Select country() {
-//            return new Select(driver.findElement(By.id("country")));
-//        }
-//        public Select state() {
-//            return new Select(driver.findElement(By.id("state")));
-//        }
+        public Select country() {
+            return new Select(driver.findElement(By.id("country")));
+        }
+        public Select state() {
+            return new Select(driver.findElement(By.id("state")));
+        }
         public WebElement zip() {
             return driver.findElement(By.id("zip"));
         }

@@ -1,57 +1,69 @@
 package pages;
 
 public class UserInfo {
-    public CharSequence getFirstName() {
-        return "Demo";
+    String firstName;
+    String lastName;
+    String username;
+    String email;
+
+    public String getFirstName() {
+        return this.firstName;
     }
 
-    public CharSequence getLastName() {
-        return "Ackathon";
+    public String getLastName() {
+        return this.lastName;
     }
 
-    public CharSequence getUsername() {
-        return "self-heal-demo";
+    public String getUsername() {
+        return this.username;
     }
 
-    public CharSequence getEmail() {
-        return "test@gmail.com";
+    public String getEmail() {
+        return this.email;
     }
 
-    public CharSequence getAddress1() {
+    public String getAddress1() {
         return "address dummy 1";
     }
 
-    public CharSequence getAddress2() {
+    public String getAddress2() {
         return "address dummy 2";
     }
 
-    public Object getCountry() {
-        return "India";
+    public int getCountry() {
+        return 1;
     }
 
-    public Object getState() {
-        return "Karnataka";
+    public int getState() {
+        return 2;
     }
 
-    public CharSequence getZip() {
+    public String getZip() {
         return "560043";
     }
 
-    public CharSequence getCardName() {
+    public String getCardName() {
         return "";
     }
 
-    public CharSequence getCardNumber() {
+    public String getCardNumber() {
         return "";
     }
 
-    public CharSequence getCardExpiration() {
+    public String getCardExpiration() {
         return "";
     }
 
-    public CharSequence getCardCVV() {
+    public String getCardCVV() {
         return "";
     }
 
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.firstName = lastName;
+    }
 }

@@ -26,8 +26,8 @@ public class PageClass {
             elements().email().sendKeys(userInfo.getEmail());
             elements().address1().sendKeys(userInfo.getAddress1());
             elements().address2().sendKeys(userInfo.getAddress2());
-//            elements().country().selectByIndex(userInfo.getCountry());
-//            elements().state().selectByIndex(userInfo.getState());
+            elements().country().selectByIndex(userInfo.getCountry());
+            elements().state().selectByIndex(userInfo.getState());
             elements().zip().sendKeys(userInfo.getZip());
             elements().cardName().sendKeys(userInfo.getCardName());
             elements().cardNumber().sendKeys(userInfo.getCardNumber());
