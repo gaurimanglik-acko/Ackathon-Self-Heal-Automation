@@ -58,7 +58,6 @@ public class UserInfo {
         return "";
     }
 
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
