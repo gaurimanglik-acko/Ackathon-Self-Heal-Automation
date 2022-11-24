@@ -23,7 +23,6 @@ public class Test1 {
     public void beforeTest() throws InterruptedException {
         switch (browser) {
             case "Chrome" -> {
-
                 WebDriverManager.chromedriver().setup();
                 delegate = new ChromeDriver();
                 driver = SelfHealingDriver.create(delegate);
@@ -69,70 +68,70 @@ public class Test1 {
 //        localPage.assertions().formSent();
     }
 
-    @Test(description = "with self healing::locator change")
-    public void locator_change() {
-        var pageClass = new PageClass(driver);
-        pageClass.navigate();
-        var userInfo = new UserInfo();
-//        userInfo.setFirstName("Anton");
-//        userInfo.setLastName("Angelov");
-//        userInfo.setUsername("aangelov");
-//        userInfo.setEmail("info@berlinspaceflowers.com");
-//        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
-//        userInfo.setAddress2("Lützowplatz 17");
-//        userInfo.setCountry(1);
-//        userInfo.setState(1);
-//        userInfo.setZip("10115");
-//        userInfo.setCardName("Anton Angelov");
-//        userInfo.setCardNumber("1234567890123456");
-//        userInfo.setCardExpiration("12/23");
-//        userInfo.setCardCVV("123");
-        pageClass.fillInfo(userInfo);
-//        localPage.assertions().formSent();
-    }
-
-    @Test(description = "without self healing::locator position change")
-    public void position_change() {
-        var pageClass = new PageClass(driver);
-        pageClass.navigate();
-        var userInfo = new UserInfo();
-//        userInfo.setFirstName("Anton");
-//        userInfo.setLastName("Angelov");
-//        userInfo.setUsername("aangelov");
-//        userInfo.setEmail("info@berlinspaceflowers.com");
-//        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
-//        userInfo.setAddress2("Lützowplatz 17");
-//        userInfo.setCountry(1);
-//        userInfo.setState(1);
-//        userInfo.setZip("10115");
-//        userInfo.setCardName("Anton Angelov");
-//        userInfo.setCardNumber("1234567890123456");
-//        userInfo.setCardExpiration("12/23");
-//        userInfo.setCardCVV("123");
-        pageClass.fillInfo(userInfo);
-//        localPage.assertions().formSent();
-    }
-
-    @Test(description = "with self healing::locator position change")
-    public void position_change_self_heal() {
-        var pageClass = new PageClass(driver);
-        pageClass.navigate();
-        var userInfo = new UserInfo();
-//        userInfo.setFirstName("Anton");
-//        userInfo.setLastName("Angelov");
-//        userInfo.setUsername("aangelov");
-//        userInfo.setEmail("info@berlinspaceflowers.com");
-//        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
-//        userInfo.setAddress2("Lützowplatz 17");
-//        userInfo.setCountry(1);
-//        userInfo.setState(1);
-//        userInfo.setZip("10115");
-//        userInfo.setCardName("Anton Angelov");
-//        userInfo.setCardNumber("1234567890123456");
-//        userInfo.setCardExpiration("12/23");
-//        userInfo.setCardCVV("123");
-        pageClass.fillInfo(userInfo);
-//        localPage.assertions().formSent();
-    }
+//    @Test(description = "with self healing::locator change")
+//    public void locator_change() {
+//        var pageClass = new PageClass(driver);
+//        pageClass.navigate();
+//        var userInfo = new UserInfo();
+////        userInfo.setFirstName("Anton");
+////        userInfo.setLastName("Angelov");
+////        userInfo.setUsername("aangelov");
+////        userInfo.setEmail("info@berlinspaceflowers.com");
+////        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+////        userInfo.setAddress2("Lützowplatz 17");
+////        userInfo.setCountry(1);
+////        userInfo.setState(1);
+////        userInfo.setZip("10115");
+////        userInfo.setCardName("Anton Angelov");
+////        userInfo.setCardNumber("1234567890123456");
+////        userInfo.setCardExpiration("12/23");
+////        userInfo.setCardCVV("123");
+//        pageClass.fillInfo(userInfo);
+////        localPage.assertions().formSent();
+//    }
+//
+//    @Test(description = "without self healing::locator position change")
+//    public void position_change() {
+//        var pageClass = new PageClass(driver);
+//        pageClass.navigate();
+//        var userInfo = new UserInfo();
+////        userInfo.setFirstName("Anton");
+////        userInfo.setLastName("Angelov");
+////        userInfo.setUsername("aangelov");
+////        userInfo.setEmail("info@berlinspaceflowers.com");
+////        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+////        userInfo.setAddress2("Lützowplatz 17");
+////        userInfo.setCountry(1);
+////        userInfo.setState(1);
+////        userInfo.setZip("10115");
+////        userInfo.setCardName("Anton Angelov");
+////        userInfo.setCardNumber("1234567890123456");
+////        userInfo.setCardExpiration("12/23");
+////        userInfo.setCardCVV("123");
+//        pageClass.fillInfo(userInfo);
+////        localPage.assertions().formSent();
+//    }
+//
+//    @Test(description = "with self healing::locator position change")
+//    public void position_change_self_heal() {
+//        var pageClass = new PageClass(driver);
+//        pageClass.navigate();
+//        var userInfo = new UserInfo();
+////        userInfo.setFirstName("Anton");
+////        userInfo.setLastName("Angelov");
+////        userInfo.setUsername("aangelov");
+////        userInfo.setEmail("info@berlinspaceflowers.com");
+////        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+////        userInfo.setAddress2("Lützowplatz 17");
+////        userInfo.setCountry(1);
+////        userInfo.setState(1);
+////        userInfo.setZip("10115");
+////        userInfo.setCardName("Anton Angelov");
+////        userInfo.setCardNumber("1234567890123456");
+////        userInfo.setCardExpiration("12/23");
+////        userInfo.setCardCVV("123");
+//        pageClass.fillInfo(userInfo);
+////        localPage.assertions().formSent();
+//    }
 
 }

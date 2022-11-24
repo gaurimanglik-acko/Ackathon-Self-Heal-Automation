@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import java.net.URL;
 
 public class PageClass {
-        private final WebDriver driver;
+        public final WebDriver driver;
         private final URL url = getClass().getClassLoader().getResource("checkout/index.html");
         public PageClass(WebDriver driver) {
             this.driver = driver;
@@ -21,19 +21,19 @@ public class PageClass {
         }
         public void fillInfo(UserInfo userInfo) {
             elements().firstName().sendKeys(userInfo.getFirstName());
-            elements().lastName().sendKeys(userInfo.getLastName());
-            elements().username().sendKeys(userInfo.getUsername());
-            elements().email().sendKeys(userInfo.getEmail());
-            elements().address1().sendKeys(userInfo.getAddress1());
-            elements().address2().sendKeys(userInfo.getAddress2());
-            elements().country().selectByIndex(userInfo.getCountry());
-            elements().state().selectByIndex(userInfo.getState());
-            elements().zip().sendKeys(userInfo.getZip());
-            elements().cardName().sendKeys(userInfo.getCardName());
-            elements().cardNumber().sendKeys(userInfo.getCardNumber());
-            elements().cardExpiration().sendKeys(userInfo.getCardExpiration());
-            elements().cardCVV().sendKeys(userInfo.getCardCVV());
-            elements().submitButton().click();
+//            elements().lastName().sendKeys(userInfo.getLastName());
+//            elements().username().sendKeys(userInfo.getUsername());
+//            elements().email().sendKeys(userInfo.getEmail());
+//            elements().address1().sendKeys(userInfo.getAddress1());
+//            elements().address2().sendKeys(userInfo.getAddress2());
+//          elements().country().selectByIndex(userInfo.getCountry());
+//            elements().state().selectByIndex(userInfo.getState());
+//            elements().zip().sendKeys(userInfo.getZip());
+//            elements().cardName().sendKeys(userInfo.getCardName());
+//            elements().cardNumber().sendKeys(userInfo.getCardNumber());
+//            elements().cardExpiration().sendKeys(userInfo.getCardExpiration());
+//            elements().cardCVV().sendKeys(userInfo.getCardCVV());
+//            elements().submitButton().click();
         }
 
 }
