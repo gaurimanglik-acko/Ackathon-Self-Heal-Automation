@@ -7,11 +7,7 @@ import java.net.URL;
 
 public class PageClass {
         public final WebDriver driver;
-        private final URL url = getClass().getClassLoader().getResource("checkout/index.html");
-        private final URL url_1 = getClass().getClassLoader().getResource("checkout/build_1.html");
-        private final URL url_2 = getClass().getClassLoader().getResource("checkout/build_2.html");
 
-    private final URL url_3 = getClass().getClassLoader().getResource("checkout/build_3.html");
         public PageClass(WebDriver driver) {
             this.driver = driver;
         }
@@ -21,22 +17,25 @@ public class PageClass {
 //        public PageAssertions assertions() {
 //            return new PageAssertions(driver);
 //        }
-        public void navigate() {
+        public void navigate(URL url) {
             driver.navigate().to(url);
         }
 
-    public void navigateBuild_1() {
-        driver.navigate().to(url_1);
-    }
-
-    public void navigateBuild_2() {
-        driver.navigate().to(url_2);
-    }
-
-    public void navigateBuild_3() {
-        driver.navigate().to(url_3);
-    }
-
+        public void setUserDetails(UserInfo userInfo){
+            userInfo.setFirstName("Anton");
+            userInfo.setLastName("Angelov");
+            userInfo.setUsername("aangelov");
+            userInfo.setEmail("info@berlinspaceflowers.com");
+            userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+            userInfo.setAddress2("Lützowplatz 17");
+            userInfo.setCountry(1);
+            userInfo.setState(1);
+            userInfo.setZip("10115");
+            userInfo.setCardName("Anton Angelov");
+            userInfo.setCardNumber("1234567890123456");
+            userInfo.setCardExpiration("12/23");
+            userInfo.setCardCVV("123");
+        }
 
 //        @Step("Step 1 - Filling the data to the form")
         public void fillInfo(UserInfo userInfo) {
@@ -58,7 +57,7 @@ public class PageClass {
 //            elements().submitButton().click();
         }
 
-    public void fillInfo_2(UserInfo userInfo) {
+    public void fillInfo_updated(UserInfo userInfo) {
         elements().firstName_xpath().sendKeys(userInfo.getFirstName());
         elements().lastName().sendKeys(userInfo.getLastName());
         elements().username().sendKeys(userInfo.getUsername());
