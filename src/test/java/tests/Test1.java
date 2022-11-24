@@ -20,39 +20,8 @@ import pages.UserInfo;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 
-public class Test1 {
-    WebDriver delegate;
+public class Test1 extends BaseTest{
 
-    SelfHealingDriver driver;
-    public static String browser = "Chrome";
-
-    @BeforeTest
-    public void beforeTest() throws InterruptedException {
-        switch (browser) {
-            case "Chrome" -> {
-                WebDriverManager.chromedriver().setup();
-                delegate = new ChromeDriver();
-                driver = SelfHealingDriver.create(delegate);
-            }
-            case "Firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
-                delegate = new FirefoxDriver();
-                driver = SelfHealingDriver.create(delegate);
-            }
-            case "Safari" -> {
-                WebDriverManager.safaridriver().setup();
-                delegate = new SafariDriver();
-                driver = SelfHealingDriver.create(delegate);
-            }
-            default -> throw new IllegalStateException("Unexpected value: " + browser);
-        }
-
-    }
-
-    @AfterEach
-    public void testCleanup() {
-        driver.quit();
-    }
 
     @Test(description = "Without self healing")
 //    @Description("Without self healing")
