@@ -73,7 +73,7 @@ public class UserInfo {
     }
 
     public void setLastName(String lastName) {
-        this.firstName = lastName;
+        this.lastName = lastName;
     }
 
     public void setUsername(String userName) {

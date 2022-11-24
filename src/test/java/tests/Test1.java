@@ -25,29 +25,115 @@ public class Test1 extends BaseTest{
 
     @Test(description = "Without self healing")
 //    @Description("Without self healing")
-    public void assertFormSent_When_ValidInfoInput() {
-        try {
+    public void test1_positive_scenario_build_0() {
+//        try {
             var pageClass = new PageClass(driver);
             pageClass.navigate();
             var userInfo = new UserInfo();
             userInfo.setFirstName("Anton");
             userInfo.setLastName("Angelov");
-//        userInfo.setUsername("aangelov");
-//        userInfo.setEmail("info@berlinspaceflowers.com");
-//        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
-//        userInfo.setAddress2("Lützowplatz 17");
-//        userInfo.setCountry(1);
-//        userInfo.setState(1);
-//        userInfo.setZip("10115");
-//        userInfo.setCardName("Anton Angelov");
-//        userInfo.setCardNumber("1234567890123456");
-//        userInfo.setCardExpiration("12/23");
-//        userInfo.setCardCVV("123");
+            userInfo.setUsername("aangelov");
+            userInfo.setEmail("info@berlinspaceflowers.com");
+            userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+            userInfo.setAddress2("Lützowplatz 17");
+            userInfo.setCountry(1);
+            userInfo.setState(1);
+            userInfo.setZip("10115");
+            userInfo.setCardName("Anton Angelov");
+            userInfo.setCardNumber("1234567890123456");
+            userInfo.setCardExpiration("12/23");
+            userInfo.setCardCVV("123");
             pageClass.fillInfo(userInfo);
 //        pageClass.assertions().formSent();
-        } catch (Exception e) {
+//        } catch (Exception e) {
 //            Allure.addAttachment("Caught an exception", e.getMessage());
 //            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-        }
+//        }
+    }
+
+    @Test(description = "Without self healing")
+//    @Description("Without self healing")
+    public void test2_negative_scenario_build_1() {
+//        try {
+        var pageClass = new PageClass(driver);
+        pageClass.navigateBuild_1();
+        var userInfo = new UserInfo();
+        userInfo.setFirstName("Anton");
+        userInfo.setLastName("Angelov");
+        userInfo.setUsername("aangelov");
+        userInfo.setEmail("info@berlinspaceflowers.com");
+        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+        userInfo.setAddress2("Lützowplatz 17");
+        userInfo.setCountry(1);
+        userInfo.setState(1);
+        userInfo.setZip("10115");
+        userInfo.setCardName("Anton Angelov");
+        userInfo.setCardNumber("1234567890123456");
+        userInfo.setCardExpiration("12/23");
+        userInfo.setCardCVV("123");
+        pageClass.fillInfo(userInfo);
+//        pageClass.assertions().formSent();
+//        } catch (Exception e) {
+//            Allure.addAttachment("Caught an exception", e.getMessage());
+//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+//        }
+    }
+
+
+    @Test(description = "Without self healing")
+//    @Description("Without self healing")
+    public void test3_negative_scenario_build_2() {
+//        try {
+        var pageClass = new PageClass(driver);
+        pageClass.navigateBuild_2();
+        var userInfo = new UserInfo();
+        userInfo.setFirstName("Anton");
+        userInfo.setLastName("Angelov");
+        userInfo.setUsername("aangelov");
+        userInfo.setEmail("info@berlinspaceflowers.com");
+        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+        userInfo.setAddress2("Lützowplatz 17");
+        userInfo.setCountry(1);
+        userInfo.setState(1);
+        userInfo.setZip("10115");
+        userInfo.setCardName("Anton Angelov");
+        userInfo.setCardNumber("1234567890123456");
+        userInfo.setCardExpiration("12/23");
+        userInfo.setCardCVV("123");
+        pageClass.fillInfo_2(userInfo);
+//        pageClass.assertions().formSent();
+//        } catch (Exception e) {
+//            Allure.addAttachment("Caught an exception", e.getMessage());
+//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+//        }
+    }
+
+
+    @Test(description = "Without self healing")
+//    @Description("Without self healing")
+    public void test3_negative_scenario_build_3() {
+//        try {
+        var pageClass = new PageClass(driver);
+        pageClass.navigateBuild_3();
+        var userInfo = new UserInfo();
+        userInfo.setFirstName("Anton");
+        userInfo.setLastName("Angelov");
+        userInfo.setUsername("aangelov");
+        userInfo.setEmail("info@berlinspaceflowers.com");
+        userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
+        userInfo.setAddress2("Lützowplatz 17");
+        userInfo.setCountry(1);
+        userInfo.setState(1);
+        userInfo.setZip("10115");
+        userInfo.setCardName("Anton Angelov");
+        userInfo.setCardNumber("1234567890123456");
+        userInfo.setCardExpiration("12/23");
+        userInfo.setCardCVV("123");
+        pageClass.fillInfo(userInfo);
+//        pageClass.assertions().formSent();
+//        } catch (Exception e) {
+//            Allure.addAttachment("Caught an exception", e.getMessage());
+//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
+//        }
     }
 }

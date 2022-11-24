@@ -13,6 +13,10 @@ public class PageElements {
         public WebElement firstName() {
             return driver.findElement(By.id("firstName"));
         }
+
+    public WebElement firstName_xpath() {
+        return driver.findElement(By.xpath("//label[contains(text(), \"First name\")]//following-sibling::input"));
+    }
         public WebElement lastName() {
             return driver.findElement(By.id("lastName"));
         }
@@ -37,6 +41,14 @@ public class PageElements {
         public WebElement zip() {
             return driver.findElement(By.id("zip"));
         }
+
+    public WebElement sameAddressCheckBox() {
+        return driver.findElement(By.id("same-address"));
+    }
+
+    public WebElement debitCardRadio() {
+        return driver.findElement(By.id("debit"));
+    }
         public WebElement cardName() {
             return driver.findElement(By.id("cc-name"));
         }
