@@ -1,6 +1,6 @@
 package pages;
 
-import io.qameta.allure.Step;
+//import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
 import java.net.URL;
@@ -20,7 +20,7 @@ public class PageClass {
         public void navigate() {
             driver.navigate().to(url);
         }
-        @Step("Step 1 - Filling the data to the form")
+//        @Step("Step 1 - Filling the data to the form")
         public void fillInfo(UserInfo userInfo) {
             elements().firstName().sendKeys(userInfo.getFirstName());
 //            elements().lastName().sendKeys(userInfo.getLastName());
