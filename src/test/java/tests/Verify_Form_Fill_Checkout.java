@@ -15,7 +15,6 @@ public class Verify_Form_Fill_Checkout extends BaseTest{
     private final URL url_4 = getClass().getClassLoader().getResource("checkout/test_build.html");
 
     @Test(description = "Without self healing")
-//    @Description("Without self healing")
     public void test1_positive_scenario_build_0() {
 //        try {
             var pageClass = new PageClass(driver);
@@ -24,64 +23,41 @@ public class Verify_Form_Fill_Checkout extends BaseTest{
             pageClass.setUserDetails(userInfo);
             pageClass.fillInfo(userInfo);
 //        pageClass.assertions().formSent();
-//        } catch (Exception e) {
-//            Allure.addAttachment("Caught an exception", e.getMessage());
-//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//        }
     }
 
     @Test(description = "Without self healing")
-//    @Description("Without self healing")
     public void test2_negative_scenario_build_1() {
-//        try {
         var pageClass = new PageClass(driver);
         pageClass.navigate(url_1);
         var userInfo = new UserInfo();
         pageClass.setUserDetails(userInfo);
         pageClass.fillInfo(userInfo);
 //        pageClass.assertions().formSent();
-//        } catch (Exception e) {
-//            Allure.addAttachment("Caught an exception", e.getMessage());
-//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//        }
     }
 
 
     @Test(description = "Without self healing")
-//    @Description("Without self healing")
     public void test3_negative_scenario_build_2() {
-//        try {
         var pageClass = new PageClass(driver);
         pageClass.navigate(url_2);
         var userInfo = new UserInfo();
         pageClass.setUserDetails(userInfo);
         pageClass.fillInfo_updated(userInfo);
 //        pageClass.assertions().formSent();
-//        } catch (Exception e) {
-//            Allure.addAttachment("Caught an exception", e.getMessage());
-//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//        }
     }
 
 
     @Test(description = "Without self healing")
-//    @Description("Without self healing")
     public void test3_negative_scenario_build_3() {
-//        try {
         var pageClass = new PageClass(driver);
         pageClass.navigate(url_3);
         var userInfo = new UserInfo();
         pageClass.setUserDetails(userInfo);
         pageClass.fillInfo(userInfo);
 //        pageClass.assertions().formSent();
-//        } catch (Exception e) {
-//            Allure.addAttachment("Caught an exception", e.getMessage());
-//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//        }
     }
 
     @Test(description = "Without self healing")
-//    @Description("Without self healing")
     public void test4_negative_scenario_build_3() {
 //        try {
         var pageClass = new PageClass(driver);
@@ -90,9 +66,5 @@ public class Verify_Form_Fill_Checkout extends BaseTest{
         pageClass.setUserDetails(userInfo);
         pageClass.fillInfo(userInfo);
 //        pageClass.assertions().formSent();
-//        } catch (Exception e) {
-//            Allure.addAttachment("Caught an exception", e.getMessage());
-//            Allure.addAttachment("Assertion Failed at this page", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-//        }
     }
 }
