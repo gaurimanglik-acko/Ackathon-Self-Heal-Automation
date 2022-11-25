@@ -39,6 +39,7 @@ public class BaseTest {
             }
             default -> throw new IllegalStateException("Unexpected value: " + browser);
         }
+//        driver.manage().window().maximize();
 
     }
 }
