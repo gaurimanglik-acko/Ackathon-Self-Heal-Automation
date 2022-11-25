@@ -2,11 +2,11 @@ package tests;
 
 import com.epam.healenium.SelfHealingDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
@@ -14,7 +14,7 @@ public class BaseTest {
     SelfHealingDriver driver;
     public static String browser = "Chrome";
 
-    @AfterEach
+    @AfterTest
     public void testCleanup() {
         driver.close();
     }

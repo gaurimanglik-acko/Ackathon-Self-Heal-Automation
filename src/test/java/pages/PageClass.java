@@ -22,19 +22,19 @@ public class PageClass {
         }
 
         public void setUserDetails(UserInfo userInfo){
-            userInfo.setFirstName("Anton");
-            userInfo.setLastName("Angelov");
-            userInfo.setUsername("aangelov");
-            userInfo.setEmail("info@berlinspaceflowers.com");
-            userInfo.setAddress1("1 Willi Brandt Avenue Tiergarten");
-            userInfo.setAddress2("Lützowplatz 17");
-            userInfo.setCountry(1);
-            userInfo.setState(1);
+            userInfo.setFirstName("Anthony");
+            userInfo.setLastName("Gonsalves");
+            userInfo.setUsername("golmaal3");
+            userInfo.setEmail("anthony@gmail.com");
+            userInfo.setAddress1("Machhi Talao, Dockyard Lane");
+            userInfo.setAddress2("Opposite Prawns Corner");
+            userInfo.setCountry(2);
+            userInfo.setState(2);
             userInfo.setZip("10115");
-            userInfo.setCardName("Anton Angelov");
+            userInfo.setCardName("Anthony Gonsalves");
             userInfo.setCardNumber("1234567890123456");
             userInfo.setCardExpiration("12/23");
-            userInfo.setCardCVV("123");
+            userInfo.setCardCVV("420");
         }
 
 //        @Step("Step 1 - Filling the data to the form")
